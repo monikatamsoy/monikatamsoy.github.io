@@ -1,20 +1,54 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
 
+// import './App.css';
+
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router'
+import ExampleForm1 from './components/form'
+import Blog from './components/blog'
+// import createHistory from 'history/createBrowserHistory'
+// console.log(window);
 class App extends Component {
   render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
+    if (window.location.pathname=="/") {
+      return(
+
+
+        <div className="app">
+
+            <ExampleForm1/>
+
+          {/* <Blog /> */}
+          {/* <Switch>
+          <Route exact path='/' component={ExampleForm1} />
+          <Route exact path='/blog' component={Blog} />
+          </Switch> */}
+
+        </div>
+
+
+
+      );
+    } else if(window.location.pathname=='/blog'){
+      return(
+
+
+        <div className="app">
+<h1>{window.localStorage.blog}</h1>
+            <Blog/>
+
+          {/* <Blog /> */}
+          {/* <Switch>
+          <Route exact path='/' component={ExampleForm1} />
+          <Route exact path='/blog' component={Blog} />
+          </Switch> */}
+
+        </div>
+
+
+
+      );
+    }
+
   }
 }
 
