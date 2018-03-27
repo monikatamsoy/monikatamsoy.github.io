@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 
 import Form from './components/form'
 import Blog from './components/blog'
+import User from './components/user'
+import './Assets/css/default.min.css';
 
 class App extends Component {
   render() {
@@ -15,8 +17,13 @@ class App extends Component {
         break;
       case "/blog":
         return (<div className="app">
-          {/* <h1>{window.localStorage.blog}</h1> */}
           <Blog/>
+        </div>);
+        break;
+      case "/user":
+        return(
+          <div className="app">
+            <User/>
         </div>);
         break;
       default:

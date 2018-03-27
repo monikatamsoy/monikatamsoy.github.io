@@ -8,14 +8,6 @@ header {
   color: $white;
   height: 100px;
 
-  .logo {
-    position: absolute;
-    // font-size: 10px;
-    top: 18px;
-    left: 15px;
-    @include translateY(-50%);
-    animation: App-logo-spin infinite 10s linear;
-  }
 
   nav,
   nav ul,
@@ -48,12 +40,7 @@ header {
   }
 }
 
-body {
-  background-image: url("./road_trees_top_view.jpg");
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+
 
 form {
   position: relative;
@@ -73,20 +60,31 @@ form:hover {
   @include transition(0.4s ease-in-out);
   cursor: pointer;
 }
+.blog{
 
-p {
-  font-weight: normal;
+  background-color: $red;
 }
+.flex-nav{
 
-h1 {
-  font-weight: normal;
+  display: flex;
+
+
 }
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.flex-carousel{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.flex-nav>div{
+  background-color: black;
+  width: 100%;
 
-  to {
-    transform: rotate(360deg);
-  }
+}
+.flex-carousel > div {
+ background-color: red;
+ margin-left: auto;
+ margin-right: auto;
+  width: 50%;
+  justify-content: center;
+
 }
