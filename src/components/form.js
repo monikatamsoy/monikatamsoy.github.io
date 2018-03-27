@@ -25,10 +25,18 @@ class Form extends React.Component {
   }
 
   render() {
+
     const {errors} = this.state;
     console.log("state", this.state);
 
-    return (<div align="center">
+    return (
+      <div>
+      <a id="triggermod" hidden uk-toggle="target: #modal-center">hh</a>
+
+      <div id="modal-center" class="uk-flex-top" uk-modal>
+          <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+
+      <div align="center">
       <form onSubmit={this.handleSubmit}>
 
         <label htmlFor="username">
@@ -48,9 +56,15 @@ class Form extends React.Component {
         }
         <input type="submit" value="Submit"/>
       </form>
-    </div>);
+    </div>
+  </div>
+</div></div>);
   }
 
 }
+
+
+
+
 
 export default Form;

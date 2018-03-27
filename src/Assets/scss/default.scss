@@ -81,10 +81,13 @@ form:hover {
 
 }
 .flex-carousel > div {
- background-color: red;
+ background-color: inherit;
  margin-left: auto;
  margin-right: auto;
   width: 50%;
   justify-content: center;
 
+}
+.flex-carousel > img{
+  height: 100%;
 }
