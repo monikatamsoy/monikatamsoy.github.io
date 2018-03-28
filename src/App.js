@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 
 import Form from './components/form'
-import Blog from './components/blog'
-import User from './components/user'
+import Blog from './components/pages/blog'
+import User from './components/pages/user'
+import Login from './components/pages/login'
 import './Assets/css/default.min.css';
 
 class App extends Component {
@@ -11,7 +12,7 @@ class App extends Component {
       case "/":
       return (<div className="app">
 
-        <Form/>
+        <Login/>
 
       </div>);
         break;

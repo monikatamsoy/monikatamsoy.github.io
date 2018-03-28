@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import User from './user'
+
 class Navbar extends Component {
   render() {
     return (
