@@ -10,16 +10,25 @@ class App extends Component {
   render() {
     switch (window.location.pathname) {
       case "/":
-      return (<div className="app">
+      if (window.localStorage.user != 1) {
+        return (<div className="app">
 
-        <Login/>
+          <Login/>
 
-      </div>);
+        </div>);
+      } else {
+        window.location = "/blog"
+      }
+
         break;
       case "/blog":
-        return (<div className="app">
-          <Blog/>
-        </div>);
+        if (window.localStorage.user == 1) {
+          return (<div className="app">
+            <Blog/>
+          </div>);
+        } else {
+          window.location = "/"
+        }
         break;
       case "/user":
         return(
