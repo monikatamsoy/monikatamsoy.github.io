@@ -80,7 +80,7 @@ label {
 
 .blog{
 
-  background-color: $red;
+  // background-color: #381720;
 }
 .flex-nav{
 
@@ -94,7 +94,7 @@ label {
   align-content: center;
 }
 .flex-nav>div{
-  background-color: black;
+  // background-color: black;
   width: 100%;
 
 }
@@ -130,7 +130,7 @@ body.loginBody {
 
 @media screen and (max-width: 480px) {
   form {
-    top: 20px;
+    top: 70px;
   }
 }
 
@@ -144,4 +144,57 @@ body.loginBody {
 .custom-input:focus {
   outline: none;
   // border-width: 2px;
+}
+
+.uk-icon-button{
+  margin-top: 20px;
+}
+.uk-flex > div{
+  position: relative;
+
+}
+.uk-flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+#item > div > .uk-card-hover:hover{
+  box-shadow: 0 5px 50px black;
+
+}
+.uk-background-cover{
+  background-image: url(/flower.jpg);
+}
+.blur-back {
+  background-image: url(/pattern2.jpg);
+  filter: blur(4px);
+  position: fixed;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+}
+.uk-navbar-nav > li > a {
+  font-size: 1rem!important;
+}
+
+.away {
+  background-image: url(/away.jpg);
+  filter: blur(5px);
+}
+
+.blur-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw!important;
+  height: 100%;
+  background-image: url(/pattern2.jpg);
+  background-attachment: fixed;
+  filter: blur(20px);
 }

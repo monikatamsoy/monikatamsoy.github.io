@@ -3,18 +3,64 @@ import React, {Component} from 'react'
 
 class CarouselImage extends Component {
   render() {
-    return (<div class="uk-child-width-1-1@m" uk-grid="uk-grid">
+    return (
 
-      <div id="mycarousel" class="uk-position-relative uk-padding-remove uk-visible-toggle uk-light" uk-slideshow="animation:slide ;animation:fade; autoplay:true; autoplay-interval: 2000 ;pause-on-hover: true">
+      <div id="mycarousel" class="uk-position-relative uk-padding-remove uk-width-1-1 uk-visible-toggle uk-light" uk-slideshow="animation:push ;animation:fade; autoplay:true; autoplay-interval: 2000 ;pause-on-hover: true">
 
     {/* <img src="../docs/images/dark.jpg" alt="" uk-cover> */}
 
         <ul class="uk-slideshow-items">
           <li >
-            <img class="custom-cover" src="/flower.jpg" alt="1" uk-cover />
+            <div class="away">
+            </div>
+            <img class=" uk-width-1-1 custom-cover" src="/away.jpg" alt="1" uk-cover />
+            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Title</h3>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
           </li>
           <li>
-            <img class="custom-cover" src="/sunset.jpg" alt="2" uk-cover/>
+            <img class=" uk-width-1-1 custom-cover" src="/beach.jpg" alt="2" uk-cover/>
+            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Title</h3>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </li>
+          <li>
+            <img class=" uk-width-1-1 custom-cover" src="/bird-3270165_1920.jpg" alt="2" uk-cover/>
+            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Title</h3>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </li>
+
+          <li>
+            <img class=" uk-width-1-1 custom-cover" src="/glass-3276648_1920.jpg" alt="2" uk-cover/>
+            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Title</h3>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </li>
+          <li>
+            <img class=" uk-width-1-1 custom-cover" src="/hawk-3274349_1920.jpg" alt="2" uk-cover/>
+            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Title</h3>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </li>
+          <li>
+            <img class=" uk-width-1-1 custom-cover" src="/fishing-boat-3241419_1920.jpg" alt="2" uk-cover/>
+            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Title</h3>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </li>
+          <li>
+            <img class=" uk-width-1-1 custom-cover" src="/people-3120717_1920.jpg" alt="2" uk-cover/>
+            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Title</h3>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
           </li>
 
         </ul>
@@ -28,7 +74,7 @@ class CarouselImage extends Component {
 
       </div>
 
-    </div>);
+);
   }
 }
 

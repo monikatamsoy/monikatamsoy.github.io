@@ -30,11 +30,9 @@ class App extends Component {
           window.location = "/"
         }
         break;
-      case "/user":
-        return(
-          <div className="app">
-            <User/>
-        </div>);
+      case "/logout":
+        window.localStorage.user = 0
+        window.location = "/"
         break;
       default:
         return 'error'
