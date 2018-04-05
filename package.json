@@ -2,7 +2,7 @@
   "name": "blog-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://monikatamsoy.github.io/React-blog/",
+  "homepage": "https://monikatamsoy.github.io/",
   "dependencies": {
     "bootstrap": "^4.0.0",
     "gh-pages": "^1.1.0",
