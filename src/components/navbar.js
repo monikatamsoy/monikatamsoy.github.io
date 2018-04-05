@@ -28,7 +28,7 @@ class Navbar extends Component {
     return (
       <div class="uk-offcanvas-content">
 
-        <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200">
+        <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent ; top: 200">
 
             <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
               <div class="uk-navbar-left uk-hidden@s">

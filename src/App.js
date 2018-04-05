@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 
 import Form from './components/form'
 import Blog from './components/pages/blog'
-import User from './components/pages/user'
 import Login from './components/pages/login'
 import './Assets/css/default.min.css';
 
